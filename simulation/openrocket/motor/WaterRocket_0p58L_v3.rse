@@ -1,0 +1,88 @@
+<engine-database>
+  <engine-list>
+    <engine  code="WaterRocket-0.58L" Type="reload" dia="90" len="113.2"
+      initWt="583.02" propWt="583.02" delays="0"
+      auto-calc-mass="0" auto-calc-cg="0"
+      avgThrust="90.976" peakThrust="172.538"
+      throatDia="0" exitDia="0" Itot="10.735" burn-time="0.1180"
+      massFrac="100" Isp="1.88"
+      tDiv="10" tStep="-1." tFix="1" FDiv="10" FStep="-1."
+      mfg="CustomWaterRocket" Name="WaterRocket-0.58L"
+      comments="v3: water column anchored at tail through real BodyTube+Transition+narrow-tube geometry">
+    <comments>Motor length = actual water column reach (cm) given the real tapered geometry; cg tracks water centroid (bounded), air approximated at casing midpoint</comments>
+    <data>
+      <eng-data t="0.0000" f="172.538" m="583.02" cg="46.7"/>
+      <eng-data t="0.0017" f="168.451" m="569.95" cg="47.8"/>
+      <eng-data t="0.0034" f="164.540" m="557.04" cg="48.8"/>
+      <eng-data t="0.0051" f="160.794" m="544.27" cg="49.8"/>
+      <eng-data t="0.0068" f="157.202" m="531.65" cg="50.8"/>
+      <eng-data t="0.0085" f="153.754" m="519.18" cg="51.8"/>
+      <eng-data t="0.0102" f="150.442" m="506.83" cg="52.8"/>
+      <eng-data t="0.0119" f="147.257" m="494.62" cg="53.8"/>
+      <eng-data t="0.0136" f="144.192" m="482.54" cg="54.7"/>
+      <eng-data t="0.0153" f="141.241" m="470.59" cg="55.7"/>
+      <eng-data t="0.0170" f="138.397" m="458.75" cg="56.7"/>
+      <eng-data t="0.0187" f="135.653" m="447.04" cg="57.6"/>
+      <eng-data t="0.0203" f="133.158" m="436.12" cg="58.5"/>
+      <eng-data t="0.0220" f="130.596" m="424.63" cg="59.4"/>
+      <eng-data t="0.0237" f="128.119" m="413.25" cg="60.3"/>
+      <eng-data t="0.0254" f="125.724" m="401.97" cg="61.3"/>
+      <eng-data t="0.0271" f="123.407" m="390.80" cg="62.2"/>
+      <eng-data t="0.0288" f="121.163" m="379.74" cg="63.1"/>
+      <eng-data t="0.0305" f="118.989" m="368.77" cg="63.9"/>
+      <eng-data t="0.0322" f="116.883" m="357.90" cg="64.8"/>
+      <eng-data t="0.0339" f="114.840" m="347.13" cg="65.7"/>
+      <eng-data t="0.0356" f="112.857" m="336.45" cg="66.6"/>
+      <eng-data t="0.0373" f="110.933" m="325.87" cg="67.5"/>
+      <eng-data t="0.0390" f="109.064" m="315.37" cg="68.3"/>
+      <eng-data t="0.0407" f="107.249" m="304.96" cg="69.2"/>
+      <eng-data t="0.0424" f="105.484" m="294.64" cg="70.0"/>
+      <eng-data t="0.0441" f="103.767" m="284.41" cg="70.9"/>
+      <eng-data t="0.0458" f="102.097" m="274.25" cg="71.7"/>
+      <eng-data t="0.0475" f="100.472" m="264.18" cg="72.6"/>
+      <eng-data t="0.0492" f="98.889" m="254.19" cg="73.4"/>
+      <eng-data t="0.0509" f="97.348" m="244.28" cg="74.3"/>
+      <eng-data t="0.0526" f="95.846" m="234.45" cg="75.1"/>
+      <eng-data t="0.0543" f="94.382" m="224.69" cg="76.0"/>
+      <eng-data t="0.0560" f="92.954" m="215.00" cg="76.8"/>
+      <eng-data t="0.0577" f="91.562" m="205.39" cg="77.6"/>
+      <eng-data t="0.0593" f="90.282" m="196.41" cg="78.4"/>
+      <eng-data t="0.0610" f="88.954" m="186.93" cg="79.3"/>
+      <eng-data t="0.0627" f="87.658" m="177.53" cg="80.1"/>
+      <eng-data t="0.0644" f="86.391" m="168.20" cg="81.0"/>
+      <eng-data t="0.0661" f="85.154" m="158.93" cg="81.9"/>
+      <eng-data t="0.0678" f="83.945" m="149.73" cg="82.7"/>
+      <eng-data t="0.0695" f="82.764" m="140.59" cg="83.6"/>
+      <eng-data t="0.0712" f="81.608" m="131.52" cg="84.4"/>
+      <eng-data t="0.0729" f="80.478" m="122.51" cg="85.3"/>
+      <eng-data t="0.0746" f="79.373" m="113.56" cg="86.1"/>
+      <eng-data t="0.0763" f="78.291" m="104.68" cg="87.0"/>
+      <eng-data t="0.0780" f="77.233" m="95.86" cg="87.9"/>
+      <eng-data t="0.0797" f="76.196" m="87.09" cg="88.8"/>
+      <eng-data t="0.0814" f="75.181" m="78.38" cg="89.6"/>
+      <eng-data t="0.0831" f="74.187" m="69.74" cg="90.5"/>
+      <eng-data t="0.0848" f="73.213" m="61.15" cg="91.3"/>
+      <eng-data t="0.0865" f="72.259" m="52.61" cg="92.1"/>
+      <eng-data t="0.0882" f="71.323" m="44.13" cg="92.7"/>
+      <eng-data t="0.0899" f="70.406" m="35.71" cg="93.2"/>
+      <eng-data t="0.0916" f="69.507" m="27.34" cg="93.2"/>
+      <eng-data t="0.0933" f="68.625" m="19.02" cg="92.2"/>
+      <eng-data t="0.0950" f="67.760" m="10.76" cg="87.5"/>
+      <eng-data t="0.0967" f="62.132" m="3.02" cg="56.6"/>
+      <eng-data t="0.0983" f="54.104" m="2.73" cg="56.6"/>
+      <eng-data t="0.1000" f="46.393" m="2.45" cg="56.6"/>
+      <eng-data t="0.1017" f="39.548" m="2.19" cg="56.6"/>
+      <eng-data t="0.1034" f="33.117" m="1.95" cg="56.6"/>
+      <eng-data t="0.1051" f="27.045" m="1.73" cg="56.6"/>
+      <eng-data t="0.1068" f="21.400" m="1.54" cg="56.6"/>
+      <eng-data t="0.1085" f="16.255" m="1.36" cg="56.6"/>
+      <eng-data t="0.1102" f="11.686" m="1.21" cg="56.6"/>
+      <eng-data t="0.1119" f="7.770" m="1.09" cg="56.6"/>
+      <eng-data t="0.1136" f="4.582" m="0.99" cg="56.6"/>
+      <eng-data t="0.1153" f="2.189" m="0.92" cg="56.6"/>
+      <eng-data t="0.1170" f="0.648" m="0.87" cg="56.6"/>
+      <eng-data t="0.1180" f="0.000" m="0.00" cg="56.6"/>
+    </data>
+    </engine>
+  </engine-list>
+</engine-database>

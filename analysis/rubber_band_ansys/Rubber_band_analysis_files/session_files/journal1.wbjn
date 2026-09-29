@@ -1,0 +1,48 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.172")
+template1 = GetTemplate(
+    TemplateName="Explicit Dynamics",
+    Solver="AUTODYN")
+system1 = template1.CreateSystem()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="r")
+matl1.DisplayName = "u"
+matl1.DisplayName = "Rubber band"
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+matlProp1 = material1.CreateProperty(
+    Name="Mooney-Rivlin",
+    Definition="2 Parameter",
+    Qualifiers={"Definition": "2 Parameter", "Behavior": ""})
+matlProp2 = matl1.CreateProperty(
+    Name="Mooney-Rivlin",
+    Definition="2 Parameter",
+    Qualifiers={"Definition": "2 Parameter", "Behavior": ""})
+matlProp3 = matl1.GetProperty(Name="Density")
+matlProp3.SetData(
+    Index=-1,
+    Variables=["Density"],
+    Values=[["1300 [kg m^-3]"]])
+matlProp2.SetData(
+    Index=-1,
+    Variables=["Material Constant C10"],
+    Values=[["0.187 [Pa]"]])
+matlProp2.SetData(
+    Variables=["Material Constant C01"],
+    Values=[["0.122 [Pa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Material Constant C10",
+    Property="Unit",
+    Value="MPa")
+matlProp2.SetData(
+    Variables=["Material Constant C10"],
+    Values=[["1.87E-07 [MPa]"]])
+matlProp2.SetVariableProperty(
+    VariableName="Material Constant C01",
+    Property="Unit",
+    Value="MPa")
+matlProp2.SetData(
+    Variables=["Material Constant C01"],
+    Values=[["1.2199999999999998E-07 [MPa]"]])
+Save(Overwrite=True)
+Save(Overwrite=True)
