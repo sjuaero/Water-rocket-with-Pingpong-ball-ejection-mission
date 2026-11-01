@@ -137,7 +137,7 @@ Water-rocket-with-Pingpong-ball-ejection-mission/
 ├── simulation/
 │   ├── matlab/                 # 추력·공력·질량 모델, Simulink / Simscape 모델
 │   └── openrocket/             # .ork, 물로켓 추력곡선(.eng/.rse), CP-받음각 데이터
-├── analysis/rubber_band_ansys/ # 슬링샷 고무밴드 ANSYS Workbench 해석
+├── analysis/rubber_band_ansys/ # 슬링샷 고무밴드 ANSYS 파일 (팀 공유 참고 자료)
 ├── docs/
 │   ├── flight_software.md      # 아두이노 비행 소프트웨어 설계 (FSM, 항법, 사출, 데이터 덤프)
 │   ├── reports/                # 최종 보고서, PBL 개념설계(사출 메커니즘)
